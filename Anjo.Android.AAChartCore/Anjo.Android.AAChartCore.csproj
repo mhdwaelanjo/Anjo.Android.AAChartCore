@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net7.0-android;</TargetFrameworks>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PackageId>Anjo.Android.AAChartCore</PackageId>
+		<PackageVersion>1.1.1</PackageVersion>
+		<AssemblyVersion>1.1.1</AssemblyVersion>
+		<FileVersion>1.1.1</FileVersion>
+		<Version>1.1.1</Version>
+		<Title>Anjo Android AAChartCore SDK</Title>
+		<Authors>Wael Anjo</Authors>
+		<Owners>Wael Anjo</Owners>
+		<PackageProjectUrl>https://github.com/mhdwaelanjo/Anjo.Android.AAChartCore</PackageProjectUrl>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<Description>.NET for Android (formerly Xamarin.Android) Binding Library - AAChartCore SDK</Description>
+		<PackageReleaseNotes>AAChartCore SDK v1.1.1</PackageReleaseNotes>
+		<Copyright>Copyright (c) 2024 Wael Anjo</Copyright>
+		<PackageTags>Xamarin.Android, AAChartCore, Chart, Column, Bar, Area, Line, Spline, Radar, Polar, Pie, Bubble, Pyramid, Funnel, Columnrange, Arearange</PackageTags>
+		<Summary>An elegant modern declarative data visualization chart framework for Android. Extremely powerful, supports line, spline, area, area spline, column, bar, pie, scatter, angular gauges, area range, area spline range, column range, bubble, box plot, error bars, funnel, waterfall, and polar chart types.</Summary>
+		<!-- Include symbol files (*.pdb) in the built .nupkg -->
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Jars\AAChartCore_v1.1.1.aar" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="xamarin.android.com.google.code.gson" Version="2.8.7" />
+	</ItemGroup>
+</Project>
