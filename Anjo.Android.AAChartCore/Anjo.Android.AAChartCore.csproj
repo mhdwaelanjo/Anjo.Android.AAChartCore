@@ -29,9 +29,6 @@
 		<PackageIcon>icon.png</PackageIcon>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Remove="Jars\AAChartCore_v1.1.1.aar" />
-	</ItemGroup>
-	<ItemGroup>
 		<None Include="..\icon.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
